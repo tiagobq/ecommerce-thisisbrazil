@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       {/* 🔝 TopBar */}
       <div className="topbar">
-        <p>📦 Frete grátis para todo o Brasil</p>
+        <p>Frete grátis para todo o Brasil 🚛 </p>
       </div>
 
       {/* Header */}
@@ -29,7 +29,7 @@ function App() {
       {/* 🖼️ Hero Section */}
       <section className="hero">
         <img
-          src="/banner.jpg" // coloque sua imagem aqui dentro de public/banner.jpg
+          src="/banner.png" // coloque sua imagem aqui dentro de public/banner.jpg
           alt="Promoção camisetas patriotas"
           className="hero-img"
         />
