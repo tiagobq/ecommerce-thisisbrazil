@@ -1,10 +1,8 @@
-/* src/App.css */
-
 /* Topbar */
 .topbar {
   background: #facc15; /* amarelo Brasil */
   text-align: center;
-  padding: 5px 0;
+  padding: 2px 0;
   font-size: 14px;
   font-weight: bold;
 }
@@ -57,7 +55,8 @@
 }
 
 .hero-btn {
-  background: #16a34a; /* verde Brasil */
+  background: #20037e; /* Azul escuro */
+  margin-top: 250px;
   border: none;
   padding: 12px 24px;
   font-size: 16px;
@@ -69,7 +68,7 @@
 }
 
 .hero-btn:hover {
-  background: #15803d;
+  background: #016c08;
 }
 
 /* Product grid */

@@ -21,8 +21,8 @@ app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
 const products = [
   {
     id: 'camiseta-brasil-01',
-    title: 'Camiseta Brasil Patriota',
-    description: 'Malha 100% algodão, estampa Brasil patriota.',
+    title: 'Camiseta Bolsonaro Livre',
+    description: 'Malha 100% algodão, estampa Brasil Livre.',
     price: 7990, // R$ 79,90
     image: '/images/camiseta-brasil-01.jpg', // troque pelo seu arquivo real ou URL externa
     checkoutUrl: 'https://exemplo-checkout.com/sku/camiseta-brasil-01'
@@ -36,9 +36,9 @@ const products = [
     checkoutUrl: 'https://exemplo-checkout.com/sku/bone-verde-amarelo-01'
   },
   {
-    id: 'adesivo-patriota-01',
-    title: 'Adesivo Patriota',
-    description: 'Adesivo vinílico resistente para carro/notebook.',
+    id: 'chicara-patriota-01',
+    title: 'Chicara Patriota',
+    description: 'Chicara Brasil livre.',
     price: 1990, // R$ 19,90
     image: '/images/adesivo-patriota-01.jpg',
     checkoutUrl: 'https://exemplo-checkout.com/sku/adesivo-patriota-01'

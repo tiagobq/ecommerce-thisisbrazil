@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import './App.css'; // estilos customizados
 
@@ -15,7 +14,7 @@ function App() {
     <div className="App">
       {/* 🔝 TopBar */}
       <div className="topbar">
-        <p>Frete grátis para todo o Brasil 🚛 </p>
+        <p>Frete grátis para todo o Brasil 🚛</p>
       </div>
 
       {/* Header */}
@@ -30,12 +29,10 @@ function App() {
       <section className="hero">
         <img
           src="/banner.png" // coloque sua imagem aqui dentro de public/banner.jpg
-          alt="Promoção camisetas patriotas"
+          alt="Promoção camisetas Bolsonaro Livre"
           className="hero-img"
         />
         <div className="hero-content">
-          <h2>Mostre seu orgulho pelo Brasil 🇧🇷</h2>
-          <p>Camisetas, bonés e adesivos com frete grátis</p>
           <button className="hero-btn">Compre Agora</button>
         </div>
       </section>
@@ -72,4 +69,3 @@ function App() {
 }
 
 export default App;
-
