@@ -107,6 +107,9 @@
 .footer-col {
   flex: 1;
   padding: 0 15px;
+  width: 200px;   /* aumenta a largura */
+  max-width: 100%; /* garante que não quebre em telas menores */
+  height: auto; 
 }
 
 .footer-col h4 {
