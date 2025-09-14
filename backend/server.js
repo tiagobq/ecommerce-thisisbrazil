@@ -36,9 +36,9 @@ const products = [
     checkoutUrl: 'https://exemplo-checkout.com/sku/bone-verde-amarelo-01'
   },
   {
-    id: 'chicara-patriota-01',
-    title: 'Chicara Patriota',
-    description: 'Chicara Brasil livre.',
+    id: 'caneca-patriota-01',
+    title: 'Caneca Patriota',
+    description: 'Caneca Brasil livre.',
     price: 1990, // R$ 19,90
     image: '/images/adesivo-patriota-01.jpg',
     checkoutUrl: 'https://exemplo-checkout.com/sku/adesivo-patriota-01'

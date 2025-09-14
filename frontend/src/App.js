@@ -4,6 +4,16 @@ import './App.css'; // estilos customizados
 function App() {
   const [products, setProducts] = useState([]);
 
+  const categories = [
+    { id: "inicio", name: "Início" },
+    { id: "produtos", name: "Produtos" },
+    { id: "sobre nos", name: "Sobre nós" },
+    { id: "contato", name: "Contato" },
+    // adicione mais se quiser
+  ];
+  
+
+
   useEffect(() => {
     fetch('http://localhost:4000/api/products')
       .then(res => res.json())
@@ -17,13 +27,24 @@ function App() {
         <p>Frete grátis para todo o Brasil 🚛</p>
       </div>
 
+
       {/* Header */}
       <header className="header">
+        <div className="logo-area">
+          <img src="/logo.jpeg" alt="Logo This is Brazil" className="logo-img"></img>
         <h1 className="logo">This is Brazil</h1>
-        <div className="actions">
+        
           {/* futuros ícones */}
         </div>
       </header>
+
+      <nav className="categories-menu">
+  {categories.map(cat => (
+    <a key={cat.id} href={`#${cat.id}`} className="category-link">
+      {cat.name}
+    </a>
+  ))}
+</nav>
 
       {/* 🖼️ Hero Section */}
       <section className="hero">
@@ -51,6 +72,7 @@ function App() {
         </section>
       </main>
 
+  
       {/* Rodapé */}
       <footer className="footer">
         <ul>
