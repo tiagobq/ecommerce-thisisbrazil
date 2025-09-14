@@ -76,6 +76,8 @@ function App() {
       {/* Rodapé */}
       <footer className="footer">
         <ul>
+          NAVEGAÇÃO
+          <p></p>
           <li><a href="#!">Aviso Legal</a></li>
           <li><a href="#!">Fale Conosco</a></li>
           <li><a href="#!">Perguntas Frequentes</a></li>
