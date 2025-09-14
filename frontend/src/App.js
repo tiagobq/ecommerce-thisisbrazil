@@ -73,21 +73,34 @@ function App() {
       </main>
 
   
-      {/* Rodapé */}
       <footer className="footer">
-        <ul>
-          NAVEGAÇÃO
-          <p></p>
-          <li><a href="#!">Aviso Legal</a></li>
-          <li><a href="#!">Fale Conosco</a></li>
-          <li><a href="#!">Perguntas Frequentes</a></li>
-          <li><a href="#!">Política de Devolução e Troca</a></li>
-          <li><a href="#!">Política de Privacidade</a></li>
-          <li><a href="#!">Política de Envio e Entrega</a></li>
-          <li><a href="#!">Rastreamento do Pedido</a></li>
-          <li><a href="#!">Sobre Nós</a></li>
-        </ul>
+  {/* Coluna 1 - Navegação */}
+  <div className="footer-col">
+    <h4>Navegação</h4>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Produtos</a></li>
+      <li><a href="#">Políticas da empresa</a></li>
+      <li><a href="#">Aviso legal</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </div>
+
+  {/* Coluna 2 - Pagamentos */}
+  <div className="footer-col">
+    <h4>Formas de Pagamento</h4>
+    <img src="/formasdepagamento.webp" alt="Formas de Pagamento" className="footer-payments" />
+  </div>
+
+        {/* Coluna 3 - Contato */}
+        <div className="footer-col">
+          <h4>Contato</h4>
+          <p>📞 WhatsApp: (48) 99628-1131</p>
+          <p>✉️ Email: contato@thisisbrasil.com</p>
+          <p>📍 Criciúma - SC</p>
+        </div>
       </footer>
+
     </div>
   );
 }
