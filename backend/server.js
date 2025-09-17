@@ -24,23 +24,23 @@ const products = [
     title: 'Camiseta Bolsonaro Livre',
     description: 'Malha 100% algodão, estampa Brasil Livre.',
     price: 7990, // R$ 79,90
-    image: '/images/camiseta-brasil-01.jpg', // troque pelo seu arquivo real ou URL externa
+    image: '/images/camiseta.jpeg', 
     checkoutUrl: 'https://exemplo-checkout.com/sku/camiseta-brasil-01'
   },
   {
     id: 'bone-verde-amarelo-01',
-    title: 'Boné Verde e Amarelo',
-    description: 'Boné ajustável com cores do Brasil.',
+    title: 'Boné Bolsonaro',
+    description: 'Boné Patriota Ajustável para Mulheres/Homens ',
     price: 5990, // R$ 59,90
-    image: '/images/bone-verde-amarelo-01.jpg',
+    image: '/images/bone.PNG',
     checkoutUrl: 'https://exemplo-checkout.com/sku/bone-verde-amarelo-01'
   },
   {
     id: 'caneca-patriota-01',
-    title: 'Caneca Patriota',
-    description: 'Caneca Brasil livre.',
-    price: 1990, // R$ 19,90
-    image: '/images/adesivo-patriota-01.jpg',
+    title: 'Caneca Bolsonaro Presidente Presente Personalizado',
+    description: 'Caneca Bolsonaro Presidente Presente Personalizado',
+    price: 1990, // R$ 59,90
+    image: '/images/caneca.PNG',
     checkoutUrl: 'https://exemplo-checkout.com/sku/adesivo-patriota-01'
   }
 ];

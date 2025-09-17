@@ -92,6 +92,11 @@ function App() {
   </div>
 </section>
 
+<div className="faixas-brasil">
+  <div className="faixa verde"></div>
+  <div className="faixa amarela"></div>
+</div>
+
   
       <footer className="footer">
   {/* Coluna 1 - Navegação */}
@@ -120,6 +125,11 @@ function App() {
           <p>📍 Criciúma - SC</p>
         </div>
       </footer>
+
+          <div className="copyright">
+      <p>Copyright Loja This is Brazil - 2025. Todos os direitos reservados.</p>
+    </div>
+
 
     </div>
   );

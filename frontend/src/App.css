@@ -166,7 +166,7 @@ body {
   align-items: center;
   gap: 20px;
   padding: 10px 20px;
-  background-color: #fafae5; /* cor clara para destacar */
+  background-color: #f5f0f0; /* cor clara para destacar */
   border-bottom: 1px solid #ddd;
   overflow-x: auto; /* permite rolar horizontalmente se houver muitas categorias */
   white-space: nowrap;
@@ -181,7 +181,7 @@ body {
 }
 
 .category-link:hover {
-  background-color: #afecaf;
+  background-color: #caf4ca;
   color: #000;
 }
 
@@ -216,5 +216,29 @@ body {
 
 .pre-footer-item p {
   color: #555;
+  font-size: 14px;
+}
+
+.faixas-brasil {
+  width: 100%;
+}
+
+.faixa {
+  height: 8px; /* Ajuste a espessura */
+}
+
+.faixa.verde {
+  background-color: #c1f9d6; /* Verde da bandeira */
+}
+
+.faixa.amarela {
+  background-color: #f8ecc5; /* Amarelo da bandeira */
+}
+
+.copyright {
+  background-color: #111;  /* cor de fundo escura */
+  color: #fff;             /* texto branco */
+  text-align: center;
+  padding: 2px 0;
   font-size: 14px;
 }
