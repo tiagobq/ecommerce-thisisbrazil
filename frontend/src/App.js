@@ -126,9 +126,17 @@ function App() {
         </div>
       </footer>
 
-          <div className="copyright">
-      <p>Copyright Loja This is Brazil - 2025. Todos os direitos reservados.</p>
-    </div>
+      <div className="copyright">
+  <p>
+    Copyright Loja This is Brazil - 2025. Todos os direitos reservados |
+    <a href="https://www.tiktok.com/@this_is_braz" target="_blank" rel="noopener noreferrer" className="social-link">
+      <img src="/tiktok.png" alt="TikTok" className="icon" />
+    </a>
+    |
+    <a href="/blog" className="blog-link">Blog</a>
+  </p>
+</div>
+
 
 
     </div>
