@@ -1,0 +1,32 @@
+.pre-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.pre-footer-item {
+  flex: 1;
+  margin: 10px;
+}
+
+.pre-footer-item img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.faixas-brasil {
+  display: flex;
+  height: 8px; /* ajuste a espessura */
+}
+
+.faixa.verde {
+  background: green;
+  flex: 1;
+}
+
+.faixa.amarela {
+  background: yellow;
+  flex: 1;
+}
