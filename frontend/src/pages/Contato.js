@@ -2,11 +2,12 @@ import React from "react";
 
 function Contato() {
   return (
-    <div>
-      <h2>Contato</h2>
-      <p>Email: contato@thisisbrazil.com</p>
-      <p>WhatsApp: (48) 99628-1131</p>
-    </div>
+    <main>
+      <h2>Fale Conosco</h2>
+      <p>📞 WhatsApp: (48) 99628-1131</p>
+      <p>✉️ Email: contato@thisisbrasil.com</p>
+      <p>📍 Criciúma - SC</p>
+    </main>
   );
 }
 
