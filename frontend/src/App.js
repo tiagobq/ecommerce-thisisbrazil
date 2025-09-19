@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import './App.css'; // estilos customizados
+import './App.css'; 
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; 
+import Home from "./pages/Home";
+import Produtos from "./pages/Produtos";
+import Sobre from "./pages/Sobre";
+import Contato from "./pages/Contato";
+
+
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -21,6 +28,7 @@ function App() {
   }, []);
 
   return (
+    <Router>
     <div className="App">
       {/* 🔝 TopBar */}
       <div className="topbar">
@@ -33,10 +41,23 @@ function App() {
         <div className="logo-area">
           <img src="/logo.jpeg" alt="Logo This is Brazil" className="logo-img"></img>
         <h1 className="logo">This is Brazil</h1>
-        
+        <nav>
+        <ul className="nav-links">
+          <li><Link to="/">Início</Link></li>         
+          <li><Link to="/produtos">Produtos</Link></li>
+          <li><Link to="/sobre">Sobre nós</Link></li>
+          <li><Link to="/contato">Contato</Link></li>
+        </ul>
+        </nav>
           {/* futuros ícones */}
         </div>
       </header>
+      <Routes>   
+      <Route path="/" element={<Home products={products} />} />
+      <Route path="/produtos" element={<Produtos products={products} />} />
+      <Route path="/sobre" element={<Sobre />} />
+      <Route path="/contato" element={<Contato />} />
+    </Routes>
 
       <nav className="categories-menu">
   {categories.map(cat => (
@@ -140,6 +161,7 @@ function App() {
 
 
     </div>
+    </Router>
   );
 }
 
