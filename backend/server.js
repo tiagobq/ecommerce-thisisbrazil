@@ -1,5 +1,4 @@
 // server.js
-// MVP de backend para e-commerce básico com checkout externo
 // Stack: Node.js + Express
 
 const express = require('express');

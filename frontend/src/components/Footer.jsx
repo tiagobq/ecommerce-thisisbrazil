@@ -12,8 +12,9 @@ function Footer() {
           <ul>
             <li><Link to="/">Início</Link></li>
             <li><Link to="/produtos">Produtos</Link></li>
+            <li><Link to="/produtos">Trocas e devoluções</Link></li>
+            <li><Link to="/produtos">Políticas da empresa</Link></li>
             <li><Link to="/sobre">Sobre nós</Link></li>
-            <li><Link to="/contato">Contato</Link></li>
           </ul>
         </div>
 
@@ -33,6 +34,7 @@ function Footer() {
           <p>📞 WhatsApp: (48) 99628-1131</p>
           <p>✉️ Email: contato@thisisbrasil.com</p>
           <p>📍 Criciúma - SC</p>
+          <p>✈️ Enviamos para todo o Brasil!</p>
         </div>
       </footer>
 

@@ -30,14 +30,14 @@
   }
   
   .footer-payments {
-    width: 150px;
+    width: 200px;
     margin-top: 10px;
   }
   
   .copyright {
     text-align: center;
     padding: 10px;
-    background: #000;
+    background: #2f2f2f;
     color: #ccc;
   }
   

@@ -31,6 +31,7 @@ function Layout({ products }) {
             <li><Link to="/">Início</Link></li>
             <li><Link to="/produtos">Produtos</Link></li>
             <li><Link to="/sobre">Sobre nós</Link></li>
+            <li><Link to="/sobre">Rastrear pedido</Link></li>
             <li><Link to="/contato">Contato</Link></li>
           </ul>
         </nav>
@@ -49,17 +50,6 @@ function Layout({ products }) {
 
       <Footer />
 
-      {/* 🔻 Copyright */}
-      <div className="copyright">
-        <p>
-          Copyright Loja This is Brazil - 2025. Todos os direitos reservados |
-          <a href="https://www.tiktok.com/@this_is_braz" target="_blank" rel="noopener noreferrer" className="social-link">
-            <img src="/tiktok.png" alt="TikTok" className="icon" />
-          </a>
-          |
-          <a href="/blog" className="blog-link">Blog</a>
-        </p>
-      </div>
     </>
   );
 }
