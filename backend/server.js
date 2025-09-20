@@ -23,6 +23,7 @@ const products = [
     title: 'Camiseta Bolsonaro Livre',
     description: 'Malha 100% algodão, estampa Brasil Livre.',
     price: 7990, // R$ 79,90
+    oldPrice: 9990,
     image: '/images/camiseta.jpeg', 
     checkoutUrl: 'https://exemplo-checkout.com/sku/camiseta-brasil-01'
   },
@@ -31,6 +32,7 @@ const products = [
     title: 'Boné Bolsonaro',
     description: 'Boné Patriota Ajustável para Mulheres/Homens ',
     price: 5990, // R$ 59,90
+    oldPrice: 8990,
     image: '/images/bone.PNG',
     checkoutUrl: 'https://exemplo-checkout.com/sku/bone-verde-amarelo-01'
   },
@@ -38,7 +40,8 @@ const products = [
     id: 'caneca-patriota-01',
     title: 'Caneca Bolsonaro Presidente Presente Personalizado',
     description: 'Caneca Bolsonaro Presidente Presente Personalizado',
-    price: 1990, // R$ 59,90
+    price: 5990, // R$ 59,90
+    oldPrice: 7990,
     image: '/images/caneca.PNG',
     checkoutUrl: 'https://exemplo-checkout.com/sku/adesivo-patriota-01'
   }
@@ -50,6 +53,7 @@ app.get('/health', (_req, res) => {
 });
 
 // Lista de produtos (em reais no front: price / 100)
+
 app.get('/api/products', (_req, res) => {
   res.json(products);
 });

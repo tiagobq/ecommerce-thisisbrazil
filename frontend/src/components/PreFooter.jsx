@@ -16,7 +16,7 @@ function PreFooter() {
           <img src="/icons/pagamento.png" alt="Pagamento" />
           <h4>Pague como quiser</h4>
           <p>
-            Cartões de crédito ou à vista. Até 4x sem juros ou 5% de desconto no PIX.
+            Cartões de crédito ou à vista. Até 12x sem juros ou 5% de desconto no PIX.
           </p>
         </div>
 

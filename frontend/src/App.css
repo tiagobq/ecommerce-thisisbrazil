@@ -93,10 +93,12 @@
 }
 
 .product-card img {
-  width: 50%;
-  max-height: 200px;
-  object-fit: cover;
+  width: 80%;        /* ocupa toda a largura do card */
+  max-height: 350px;  /* altura máxima */
+  object-fit: cover;  /* corta e adapta proporcionalmente */
+  border-radius: 8px; /* opcional: cantos arredondados */
 }
+
 
 .product-card h3,
 .product-card p {
@@ -241,5 +243,16 @@ body {
 .nav-links li a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 8px;
+}
+
+.new-price {
+  color: green;
   font-weight: bold;
 }
