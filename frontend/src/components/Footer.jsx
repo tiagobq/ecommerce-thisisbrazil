@@ -10,11 +10,14 @@ function Footer() {
         <div className="footer-col">
           <h4>Navegação</h4>
           <ul>
-            <li><Link to="/">Início</Link></li>
+            <li><Link to="/home">Início</Link></li>
             <li><Link to="/produtos">Produtos</Link></li>
-            <li><Link to="/produtos">Trocas e devoluções</Link></li>
-            <li><Link to="/produtos">Políticas da empresa</Link></li>
-            <li><Link to="/sobre">Sobre nós</Link></li>
+            <li><Link to="/trocasdevolucoes">Trocas e Devoluções</Link></li>
+            <li><Link to="/politicasdaempresa">Políticas da Empresa</Link></li>
+            <li><Link to="/perguntasfrequentes">Perguntas Frequentes</Link></li>
+            <li><Link to="/avisolegal">Aviso Legal</Link></li>
+            <li><Link to="/sobre">Sobre Nós</Link></li>
+            <li><Link to="/contato">Fale Conosco</Link></li>
           </ul>
         </div>
 
