@@ -4,6 +4,7 @@ function Home({ products }) {
   return (
     <div className="home">
       <section className="hero">
+      <source srcSet="/images/banner-mobile.webp" media="(max-width: 768px)" />
         <img src="/banner.png" alt="Banner" className="hero-img" />
         <a href="#produtos">
           <button className="hero-btn">Compre Agora</button>

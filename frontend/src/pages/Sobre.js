@@ -2,7 +2,7 @@ import React from "react";
 
 function Sobre() {
   return (
-    <main>
+    <div className="page-container">
       <h2>Sobre Nós</h2>
       <p>
       👋 Olá, patriota! Seja muito bem-vindo à This is Brazil, a loja online feita para quem tem orgulho do nosso país e não abaixa a cabeça para ninguém.</p>
@@ -23,7 +23,7 @@ function Sobre() {
             <p>Um forte abraço,
             Equipe This is Brazil 💪 </p>
       
-    </main>
+   </div>
   );
 }
 

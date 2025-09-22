@@ -3,7 +3,8 @@ import React from "react";
 
 function PoliticasdaEmpresa() {
   return (
-    <main>
+    <div className="page-container">
+    
       <h1>Política de Privacidade – This is Brazil</h1>
 
 <p>A <strong>This is Brazil</strong> valoriza a privacidade e a segurança dos dados de seus clientes. Este documento explica como coletamos, utilizamos e protegemos as informações fornecidas em nosso site.</p>
@@ -32,7 +33,7 @@ function PoliticasdaEmpresa() {
 <p><strong>8. Contato</strong></p>
 <p>Para qualquer dúvida sobre a Política de Privacidade ou sobre o tratamento de dados pessoais, entre em contato pelo e-mail: <a href="mailto:contato@thisisbrasil.com">contato@thisisbrasil.com</a>.</p>
 
-</main>
+</div>
   );
 }
 export default PoliticasdaEmpresa;

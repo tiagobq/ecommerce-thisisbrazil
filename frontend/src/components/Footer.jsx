@@ -10,7 +10,15 @@ function Footer() {
         <div className="footer-col">
           <h4>Navegação</h4>
           <ul>
-            <li><Link to="/home">Início</Link></li>
+                      <li>
+              <Link
+                to="/"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
+                Início
+              </Link>
+            </li>
+            
             <li><Link to="/produtos">Produtos</Link></li>
             <li><Link to="/trocasdevolucoes">Trocas e Devoluções</Link></li>
             <li><Link to="/politicasdaempresa">Políticas da Empresa</Link></li>

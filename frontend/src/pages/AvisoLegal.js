@@ -2,7 +2,8 @@ import React from "react";
 
 function AvisoLegal() {
   return (
-    <main>
+    <div className="page-container">
+    
       <h2>Aviso Legal</h2>
       <h1>Aviso Legal – This is Brazil</h1>
 
@@ -31,9 +32,9 @@ function AvisoLegal() {
 <p><strong>6. Contato</strong></p>
 <p>Em caso de dúvidas sobre este Aviso Legal ou sobre qualquer aspecto de nossos serviços, o cliente poderá entrar em contato através do e-mail: <a href="mailto:contato@thisisbrasil.com">contato@thisisbrasil.com</a>.</p>
 
+</div>
+);
 
-      </main>
-  );
 }
 
 export default AvisoLegal;

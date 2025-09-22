@@ -2,7 +2,7 @@ import React from "react";
 
 function TrocasDevolucoes() {
   return (
-    <main>
+    <div className="page-container">
       <h2>Trocas e devoluções</h2>
                     <p>NOSSO MAIOR COMPROMISSO É COM A SUA PLENA SATISFAÇÃO. Se você escolheu seu produto em nossa loja virtual, mas, ao recebê-lo, verificou que existe algum defeito de fabricação, ou até mesmo ficou insatisfeito com o produto adquirido, nós asseguramos seu direito de troca ou devolução.</p>
                 <p>Lembrando que o primeiro passo para troca ou devolução é comunicar nossa Central de Atendimento pelo e-mail: contato@thisisbrasil.com</p>
@@ -17,7 +17,7 @@ function TrocasDevolucoes() {
                 <p>2. Receber a restituição do valor gasto com os produtos.</p>
 
                 <p>O custo de envio do produto para troca é por conta do comprador.</p>
-      </main>
+      </div>
   );
 }
 

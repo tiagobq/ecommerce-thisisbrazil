@@ -61,7 +61,7 @@ function Layout({ products }) {
         <Route path="/politicasdaempresa" element={<PoliticasdaEmpresa />} />
         <Route path="/trocasdevolucoes" element={<TrocasDevolucoes />} />
         <Route path="/rastrearpedido" element={<RastrearPedido />} />
-        <Route path="/inicio" element={<Home />} />
+        <Route path="/inicio" element={<Home products={products} />} />
 
       </Routes>
       

@@ -2,7 +2,7 @@ import React from "react";
 
 function RastrearPedido() {
   return (
-    <main>
+    <div className="page-container">
       <h2>Rastreamento de Pedidos</h2>
 
 <p>Você possui um código de rastreamento?</p>
@@ -19,7 +19,7 @@ function RastrearPedido() {
 
 <p>Lembramos que é essencial que você envie o seu número de pedido no e-mail(ou WhatsApp), caso contrário não será possível atender a sua solicitação.</p>
 
-</main>
+</div>
   );
 }
 

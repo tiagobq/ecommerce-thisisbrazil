@@ -2,7 +2,7 @@ import React from "react";
 
 function PerguntasFrequentes() {
   return (
-    <main>
+    <div className="page-container">
       <h2>Perguntas Frequentes</h2>
 
       <p>O SITE É CONFIÁVEL?</p>
@@ -45,9 +45,7 @@ contato@thisisbrasil.com</p>
 <p>Não, apenas o valor integral do produto normal.</p>
 
 <p>QUALQUER DÚVIDA, basta nos mandar um e-mail para: contato@thisisbrasil.com informando o que aconteceu que vamos responder em até 24h.</p>
-
-
-      </main>
+     </div>
   );
 }
 

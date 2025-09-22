@@ -46,3 +46,13 @@
     margin: 0 5px;
   }
   
+  .page-container {
+    display: flex;              /* ativa o flexbox */
+    flex-direction: column;     /* organiza os itens em coluna */
+    justify-content: center;    /* centraliza verticalmente */
+    align-items: center;        /* centraliza horizontalmente */
+    min-height: 80vh;           /* ocupa pelo menos 80% da altura da tela */
+    text-align: center;         /* centraliza o texto */
+    padding: 20px;              /* espaço interno */
+  }
+  
