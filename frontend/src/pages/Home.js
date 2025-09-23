@@ -17,11 +17,13 @@ function Home({ products }) {
         <div className="product-grid">
           {products.map((produto) => (
             <div key={produto.id} className="product-card">
+              <Link to={`/produto/${produto.id}`}>
               <img
                 src={`http://localhost:4000${produto.image}`}
                 alt={produto.title}
                 className="product-img"
               />
+              </Link>
               <h3>{produto.title}</h3>
               <p>{produto.description}</p>
 
@@ -43,7 +45,9 @@ function Home({ products }) {
                 rel="noopener noreferrer"
               >
                 <Link to={`/produto/${produto.id}`}>
+                <Link to={`/produto/${produto.id}`}>
               <button>Comprar</button>
+            </Link>
             </Link>
 
               </a>

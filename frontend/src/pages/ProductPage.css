@@ -35,24 +35,25 @@
   
   .old-price {
     text-decoration: line-through;
-    color: #888;
+    color: #e60000;
     font-size: 1.2rem;
   }
   
   .new-price {
-    color: #e60000;
+    color: #023d02;
     font-size: 1.6rem;
     font-weight: bold;
   }
   
   .buy-btn {
-    padding: 12px 20px;
+    padding: 15px 25px;
     background-color: #008000;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 10px;
+    font-size: 18px;
     cursor: pointer;
+    font-weight: bold;
   }
   
   .product-description, .product-shipping {
@@ -71,5 +72,48 @@
     .buy-btn {
       width: 100%;
     }
+  }
+  
+  .reviews-section {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .reviews-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .average-rating {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .review {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .review p {
+    margin: 5px 0;
+  }
+  
+  .review span {
+    color: #ffb400; /* cor das estrelas */
+  }
+  
+  .see-more {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 15px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
   

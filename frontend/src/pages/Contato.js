@@ -4,7 +4,7 @@ function Contato() {
   return (
     <div className="page-container">
     
-      <h2>Fale Conosco</h2>
+      <h2><strong>Fale Conosco</strong></h2>
       <p>📞 WhatsApp: (48) 99628-1131</p>
       <p>✉️ Email: contato@thisisbrasil.com</p>
       <p>📍 Criciúma - SC</p>

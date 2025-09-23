@@ -71,6 +71,38 @@ function ProductPage() {
           <p>Frete grátis para todo Brasil</p>
           {/* ou calculadora de frete, etc. */}
         </div>
+
+        <div className="reviews-section">
+  <h2>Avaliações dos clientes</h2>
+
+  {/* Nota média */}
+  <div className="average-rating">
+    ⭐⭐⭐⭐☆ (4.2 de 5) - 12 avaliações
+  </div>
+
+  {/* Comentários */}
+  <div className="review">
+    <p><strong>Maria S.</strong></p>
+    <p>Produto excelente, me ajudou muito no dia a dia!</p>
+    <span>⭐⭐⭐⭐⭐</span>
+  </div>
+
+  <div className="review">
+    <p><strong>João P.</strong></p>
+    <p>Bom custo-benefício, chegou rápido e bem embalado.</p>
+    <span>⭐⭐⭐⭐</span>
+  </div>
+
+            <div className="review">
+                <p><strong>Ana L.</strong></p>
+                <p>Achei que poderia ser mais resistente, mas funciona bem.</p>
+                <span>⭐⭐⭐</span>
+            </div>
+
+            {/* Botão para ver mais avaliações */}
+            <button className="see-more">Ver todas as avaliações</button>
+            </div>
+
       </div>
     </div>
   );
