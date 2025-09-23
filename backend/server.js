@@ -38,8 +38,8 @@ const products = [
   },
   {
     id: 'caneca-patriota-01',
-    title: 'Caneca Bolsonaro Presidente Presente Personalizado',
-    description: 'Caneca Bolsonaro Presidente Presente Personalizado',
+    title: 'Caneca Bolsonaro Presidente Personalizado',
+    description: 'Caneca Bolsonaro Presidente Personalizado',
     price: 5990, // R$ 59,90
     oldPrice: 7990,
     image: '/images/caneca.PNG',
@@ -66,6 +66,15 @@ app.get('/api/checkout/:id', (req, res) => {
   }
   return res.redirect(302, product.checkoutUrl);
 });
+
+app.get('/api/products/:id', (req, res) => {
+  const product = products.find(p => p.id === req.params.id);
+  if (!product) {
+    return res.status(404).json({ error: "Produto não encontrado" });
+  }
+  res.json(product);
+});
+
 
 app.listen(PORT, () => {
   console.log(`✅ API rodando em http://localhost:${PORT}`);

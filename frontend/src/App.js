@@ -15,6 +15,8 @@ import PerguntasFrequentes from "./pages/PerguntasFrequentes";
 import PoliticasdaEmpresa from "./pages/PoliticasdaEmpresa";
 import TrocasDevolucoes from "./pages/TrocasDevolucoes";
 import ScrollToTop from "./components/ScrollToTop";
+import ProductPage from "./pages/ProductPage";
+
 
 function Layout({ products }) {
   const location = useLocation();
@@ -29,7 +31,9 @@ function Layout({ products }) {
       {/* 🔝 Header */}
       <header className="header">
         <div className="logo-area">
+        <Link to="/">
           <img src="/logo.jpeg" alt="Logo This is Brazil" className="logo-img" />
+          </Link>
           <h1 className="logo">This is Brazil</h1>
         </div>
         <nav>
@@ -46,7 +50,6 @@ function Layout({ products }) {
 
       {/* 🔄 Rotas */}
 
-      
       <ScrollToTop /> 
       
       <Routes>
@@ -62,6 +65,8 @@ function Layout({ products }) {
         <Route path="/trocasdevolucoes" element={<TrocasDevolucoes />} />
         <Route path="/rastrearpedido" element={<RastrearPedido />} />
         <Route path="/inicio" element={<Home products={products} />} />
+        <Route path="/produto/:id" element={<ProductPage />} />
+
 
       </Routes>
       

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home({ products }) {
   return (
@@ -41,7 +42,10 @@ function Home({ products }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="hero-btn">Comprar Agora</button>
+                <Link to={`/produto/${produto.id}`}>
+              <button>Comprar</button>
+            </Link>
+
               </a>
             </div>
           ))}
