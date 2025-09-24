@@ -25,8 +25,7 @@ function Home({ products }) {
               />
               </Link>
               <h3>{produto.title}</h3>
-              <p>{produto.description}</p>
-
+              
               {/* 🔥 Preço com comparação */}
               <div className="product-price">
                 {produto.oldPrice && (

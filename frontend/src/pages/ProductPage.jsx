@@ -1,4 +1,3 @@
-// src/pages/ProductPage.jsx
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./ProductPage.css";
@@ -39,8 +38,8 @@ function ProductPage() {
           alt={product.title}
           className="product-main-img"
         />
-        {/* Se quiser galeria, pode colocar miniaturas por baixo */}
       </div>
+
       <div className="product-details-section">
         <h1>{product.title}</h1>
 
@@ -55,7 +54,7 @@ function ProductPage() {
           </span>
         </div>
 
-        { product.discount && (
+        {product.discount && (
           <p className="product-discount">{product.discount}% OFF</p>
         )}
 
@@ -69,40 +68,27 @@ function ProductPage() {
         <div className="product-shipping">
           <h2>Envio</h2>
           <p>Frete grátis para todo Brasil</p>
-          {/* ou calculadora de frete, etc. */}
         </div>
 
+        {/* Avaliações */}
         <div className="reviews-section">
-  <h2>Avaliações dos clientes</h2>
+          <h2>Avaliações dos clientes</h2>
 
-  {/* Nota média */}
-  <div className="average-rating">
-    ⭐⭐⭐⭐☆ (4.2 de 5) - 12 avaliações
-  </div>
+          {product.reviews && product.reviews.length > 0 ? (
+            product.reviews.map((rev, index) => (
+              <div key={index} className="review">
+                <p><strong>{rev.nome}</strong></p>
+                <p>{rev.texto}</p>
+                <span>{"⭐".repeat(rev.estrelas)}</span>
+              </div>
+            ))
+          ) : (
+            <p>Este produto ainda não possui avaliações.</p>
+          )}
+        </div>
 
-  {/* Comentários */}
-  <div className="review">
-    <p><strong>Maria S.</strong></p>
-    <p>Produto excelente, me ajudou muito no dia a dia!</p>
-    <span>⭐⭐⭐⭐⭐</span>
-  </div>
-
-  <div className="review">
-    <p><strong>João P.</strong></p>
-    <p>Bom custo-benefício, chegou rápido e bem embalado.</p>
-    <span>⭐⭐⭐⭐</span>
-  </div>
-
-            <div className="review">
-                <p><strong>Ana L.</strong></p>
-                <p>Achei que poderia ser mais resistente, mas funciona bem.</p>
-                <span>⭐⭐⭐</span>
-            </div>
-
-            {/* Botão para ver mais avaliações */}
-            <button className="see-more">Ver todas as avaliações</button>
-            </div>
-
+        {/* Botão para ver mais avaliações */}
+        <button className="see-more">Ver todas as avaliações</button>
       </div>
     </div>
   );

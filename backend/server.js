@@ -21,10 +21,16 @@ const products = [
   {
     id: 'camiseta-brasil-01',
     title: 'Camiseta Bolsonaro Livre',
-    description: 'Uma das peças que não podem faltar no guarda-roupas de todo mundo é a camiseta patriota. Ela pode ser usada em qualquer ocasião, apesar de simples, é estilosa, e combina com qualquer peça de roupa, como calças e bermudas. A malha da camiseta é confortável, possui toque macio e é de grande durabilidade. Ideal para o dia a dia, a camiseta patriota permite compor um look confortável e descontraído. Pensando no conforto do usuário, a camiseta da Bolsonaro livre amassa. Marca: Slim Fitness Fashion Tamanhos: P, M, G, GG Composição: 65% Poliéster e 35% Algodão',
+    description: 'Uma das peças que não podem faltar no guarda-roupas de todo mundo é a camiseta patriota. Ela pode ser usada em qualquer ocasião, apesar de simples, é estilosa, e combina com qualquer peça de roupa, como calças e bermudas. A malha da camiseta é confortável, possui toque macio e é de grande durabilidade. Ideal para o dia a dia, a camiseta patriota permite compor um look confortável e descontraído. Pensando no conforto do usuário, a camiseta da Bolsonaro livre amassa. Marca: DHOO Fashion Tamanhos: P, M, G, GG Composição: 65% Poliéster e 35% Algodão.',
     price: 7990, // R$ 79,90
     oldPrice: 9990,
     image: '/images/camiseta.jpeg', 
+    reviews: [
+      { nome: "Maria S.", texto: "Camiseta top, recomendo!", estrelas: 5 },
+      { nome: "João P.", texto: "Tecido macio, gostei bastante.", estrelas: 4 },
+      { nome: "Cassio A.", texto: "Muito orgulhoso, aprovada!.", estrelas: 4 },
+      { nome: "Ana S.", texto: "é hora da vitória, estamos juntos capitão.", estrelas: 5 },
+    ],
     checkoutUrl: 'https://exemplo-checkout.com/sku/camiseta-brasil-01'
   },
   {
