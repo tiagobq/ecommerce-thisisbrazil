@@ -40,6 +40,12 @@ const products = [
     price: 5990, // R$ 59,90
     oldPrice: 8990,
     image: '/images/bone.PNG',
+    reviews: [
+      { nome: "Estela E.", texto: "vestiu muito bem, recomendo", estrelas: 5 },
+      { nome: "Israel S.", texto: "Fiquei muito chic, obrigado.", estrelas: 4 },
+      { nome: "Maria O.", texto: "tamanho muito bom.", estrelas: 4 },
+      
+    ],
     checkoutUrl: 'https://exemplo-checkout.com/sku/bone-verde-amarelo-01'
   },
   {
@@ -49,6 +55,11 @@ const products = [
     price: 5990, // R$ 59,90
     oldPrice: 7990,
     image: '/images/caneca.PNG',
+    reviews: [
+      { nome: "Maria S.", texto: "agora sou patriota mesmo.", estrelas: 5 },
+      { nome: "João P.", texto: "gostei do produto.", estrelas: 4 },
+      { nome: "Cassio A.", texto: "Chegou muito rápido.", estrelas: 4 },
+    ],
     checkoutUrl: 'https://exemplo-checkout.com/sku/adesivo-patriota-01'
   }
 ];

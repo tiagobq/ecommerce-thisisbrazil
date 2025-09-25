@@ -7,6 +7,8 @@ function ProductPage() {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  const [selectedSize, setSelectedSize] = useState("");
+
   useEffect(() => {
     fetch(`http://localhost:4000/api/products/${id}`)
       .then(res => {
@@ -22,6 +24,15 @@ function ProductPage() {
         setLoading(false);
       });
   }, [id]);
+  
+  const handleBuyNow = () => {
+    if (!selectedSize) {
+      alert("Por favor, selecione um tamanho antes de comprar.");
+      return;
+    }
+    console.log("Comprando tamanho:", selectedSize);
+    // Aqui você coloca o redirecionamento pro checkout
+  };
 
   if (loading) {
     return <div className="product-page">Carregando...</div>;
@@ -57,9 +68,21 @@ function ProductPage() {
         {product.discount && (
           <p className="product-discount">{product.discount}% OFF</p>
         )}
-
-        <button className="buy-btn">Comprar Agora</button>
-
+        <label>Selecione o tamanho:</label>
+        <select
+          value={selectedSize}
+          onChange={(e) => setSelectedSize(e.target.value)}
+        >
+          <option value="">-- Escolha --</option>
+          <option value="P">P</option>
+          <option value="M">M</option>
+          <option value="G">G</option>
+          <option value="GG">GG</option>
+        </select>
+        <button className="buy-btn" onClick={handleBuyNow}>
+                Comprar Agora
+              </button>
+        
         <div className="product-description">
           <h2>Descrição</h2>
           <p>{product.description}</p>

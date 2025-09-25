@@ -117,3 +117,13 @@
     cursor: pointer;
   }
   
+  .product-details-section select {
+    width: 150px;        /* 🔹 define o comprimento */
+    padding: 8px;        /* 🔹 espaço interno */
+    border-radius: 6px;  /* 🔹 cantos arredondados */
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
