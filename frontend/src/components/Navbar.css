@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    flex-wrap: wrap; /* permite quebrar linha */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* permite os links quebrarem linha */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column; /* empilha os links */
+      width: 100%;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .nav-links a {
+      font-size: 18px;
+      padding: 10px 0;
+    }
+  }
+  
