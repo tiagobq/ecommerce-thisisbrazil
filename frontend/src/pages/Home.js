@@ -39,7 +39,7 @@ function Home({ products }) {
               </div>
 
               <a
-                href={produto.checkoutUrl}
+                href={products.checkoutUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >

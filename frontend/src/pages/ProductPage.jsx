@@ -30,9 +30,17 @@ function ProductPage() {
       alert("Por favor, selecione um tamanho antes de comprar.");
       return;
     }
-    console.log("Comprando tamanho:", selectedSize);
-    // Aqui você coloca o redirecionamento pro checkout
-  };
+        const checkoutLinks = {
+          P: "https://thisisbrazil.pay.yampi.com.br/r/MJP0HKOESE",
+          M: "https://thisisbrazil.pay.yampi.com.br/r/MLN2VWX3RF",
+          G: "https://thisisbrazil.pay.yampi.com.br/r/U184TCNA6K",
+          GG: "https://thisisbrazil.pay.yampi.com.br/r/LA4Q5GKP6J",
+        };
+
+        window.location.href = checkoutLinks[selectedSize];
+      };
+
+  
 
   if (loading) {
     return <div className="product-page">Carregando...</div>;
@@ -79,8 +87,11 @@ function ProductPage() {
           <option value="G">G</option>
           <option value="GG">GG</option>
         </select>
-        <button className="buy-btn" onClick={handleBuyNow}>
-                Comprar Agora
+
+
+        <button  
+          className="buy-btn" onClick={handleBuyNow}>
+                        Comprar Agora
               </button>
         
         <div className="product-description">
@@ -90,7 +101,7 @@ function ProductPage() {
 
         <div className="product-shipping">
           <h2>Envio</h2>
-          <p>Frete grátis para todo Brasil</p>
+          <p>Frete grátis para todo Brasil</p >
         </div>
 
         {/* Avaliações */}

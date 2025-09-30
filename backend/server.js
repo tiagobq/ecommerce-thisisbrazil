@@ -19,22 +19,22 @@ app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
 // price em centavos para evitar problemas de ponto flutuante
 const products = [
   {
-    id: 'camiseta-brasil-01',
-    title: 'Camiseta Bolsonaro Livre',
-    description: 'Uma das peças que não podem faltar no guarda-roupas de todo mundo é a camiseta patriota. Ela pode ser usada em qualquer ocasião, apesar de simples, é estilosa, e combina com qualquer peça de roupa, como calças e bermudas. A malha da camiseta é confortável, possui toque macio e é de grande durabilidade. Ideal para o dia a dia, a camiseta patriota permite compor um look confortável e descontraído. Pensando no conforto do usuário, a camiseta da Bolsonaro livre amassa. Marca: DHOO Fashion Tamanhos: P, M, G, GG Composição: 65% Poliéster e 35% Algodão.',
+    id: "1",
+    title: "Camiseta Bolsonaro Livre",
+    description: "Uma das peças que não podem faltar no guarda-roupas de todo mundo é a camiseta patriota. Ela pode ser usada em qualquer ocasião, apesar de simples, é estilosa, e combina com qualquer peça de roupa, como calças e bermudas. A malha da camiseta é confortável, possui toque macio e é de grande durabilidade. Ideal para o dia a dia, a camiseta patriota permite compor um look confortável e descontraído. Pensando no conforto do usuário, a camiseta da Bolsonaro livre amassa. Marca: DHOO Fashion Tamanhos: P, M, G, GG Composição: 65% Poliéster e 35% Algodão.",
     price: 7990, // R$ 79,90
     oldPrice: 9990,
-    image: '/images/camiseta.jpeg', 
+    image: "/images/camiseta.jpeg", 
     reviews: [
       { nome: "Maria S.", texto: "Camiseta top, recomendo!", estrelas: 5 },
       { nome: "João P.", texto: "Tecido macio, gostei bastante.", estrelas: 4 },
       { nome: "Cassio A.", texto: "Muito orgulhoso, aprovada!.", estrelas: 4 },
       { nome: "Ana S.", texto: "é hora da vitória, estamos juntos capitão.", estrelas: 5 },
     ],
-    checkoutUrl: 'https://exemplo-checkout.com/sku/camiseta-brasil-01'
+    checkoutLink: "https://thisisbrazil.pay.yampi.com.br/r/CCF796L541"
   },
   {
-    id: 'bone-verde-amarelo-01',
+    id: "2",
     title: 'Boné Bolsonaro',
     description: 'Boné Patriota Ajustável para Mulheres/Homens ',
     price: 5990, // R$ 59,90
@@ -46,10 +46,10 @@ const products = [
       { nome: "Maria O.", texto: "tamanho muito bom.", estrelas: 4 },
       
     ],
-    checkoutUrl: 'https://exemplo-checkout.com/sku/bone-verde-amarelo-01'
+    checkoutLink: 'https://exemplo-checkout.com/sku/bone-verde-amarelo-01'
   },
   {
-    id: 'caneca-patriota-01',
+    id: "3",
     title: 'Caneca Bolsonaro Presidente Personalizado',
     description: 'Caneca Bolsonaro Presidente Personalizado',
     price: 5990, // R$ 59,90
@@ -60,7 +60,7 @@ const products = [
       { nome: "João P.", texto: "gostei do produto.", estrelas: 4 },
       { nome: "Cassio A.", texto: "Chegou muito rápido.", estrelas: 4 },
     ],
-    checkoutUrl: 'https://exemplo-checkout.com/sku/adesivo-patriota-01'
+    checkoutLink: 'https://exemplo-checkout.com/sku/adesivo-patriota-01'
   }
 ];
 
@@ -96,3 +96,5 @@ app.get('/api/products/:id', (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ API rodando em http://localhost:${PORT}`);
 });
+
+module.exports = products; 
