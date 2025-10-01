@@ -83,7 +83,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/products")
+    fetch(`${process.env.REACT_APP_API_URL}/api/products`)
       .then((res) => res.json())
       .then(setProducts);
   }, []);
