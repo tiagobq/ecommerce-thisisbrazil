@@ -134,3 +134,12 @@
     text-align: justify;
   }
   
+  /* Força a descrição do product page a expandir — aumenta especificidade e evita overrides */
+.product-page.container .product-details-section .product-description,
+.product-page.container .product-details-section .product-description p {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  display: block !important;
+  max-height: none !important;
+}
