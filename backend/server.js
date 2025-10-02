@@ -17,7 +17,7 @@ const products = [
   {
     id: "1",
     title: "Camiseta Bolsonaro Livre",
-    description: "Uma das peças que não podem faltar...",
+    description: "Uma das peças que não podem faltar no guarda-roupas de todo mundo é a camiseta patriota. Ela pode ser usada em qualquer ocasião, apesar de simples, é estilosa, e combina com qualquer peça de roupa, como calças e bermudas. A malha da camiseta é confortável, possui toque macio e é de grande durabilidade. Ideal para o dia a dia, a camiseta patriota permite compor um look confortável e descontraído. Pensando no conforto do usuário, a camiseta da Bolsonaro livre amassa. Marca: DHOO Fashion Tamanhos: P, M, G, GG Composição: 65% Poliéster e 35%",
     price: 7990,
     oldPrice: 9990,
     image: "/images/camiseta.jpeg",
