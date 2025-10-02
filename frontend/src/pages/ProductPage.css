@@ -127,19 +127,13 @@
     cursor: pointer;
   }
   
-  .product-description p {
-    white-space: normal; 
-    overflow: visible; 
-    text-overflow: unset;
-    text-align: justify;
-  }
-  
-  /* Força a descrição do product page a expandir — aumenta especificidade e evita overrides */
-.product-page.container .product-details-section .product-description,
-.product-page.container .product-details-section .product-description p {
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: clip !important;
+ /* Força a descrição do produto a aparecer completa na ProductPage */
+.product-page .product-description,
+.product-page .product-description p {
   display: block !important;
   max-height: none !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  white-space: normal !important;
+  text-align: justify;
 }
