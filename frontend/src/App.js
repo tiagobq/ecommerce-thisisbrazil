@@ -19,10 +19,6 @@ import ScrollToTop from "./components/ScrollToTop";
 import ProductPage from "./pages/ProductPage";
 
 
-
-
-
-
 function Layout({ products }) {
   const location = useLocation();
 
@@ -88,7 +84,8 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/api/products`)
+    fetch("https://thisisbrazil-backend.onrender.com/api/products")
+
       .then((res) => res.json())
       .then(setProducts);
   }, []);

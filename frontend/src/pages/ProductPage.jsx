@@ -10,7 +10,8 @@ function ProductPage() {
   const [selectedSize, setSelectedSize] = useState("");
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/api/products/${id}`)
+    fetch(`https://thisisbrazil-backend.onrender.com/api/products/${id}`)
+
       .then(res => {
         if (!res.ok) throw new Error("Produto não encontrado");
         return res.json();
