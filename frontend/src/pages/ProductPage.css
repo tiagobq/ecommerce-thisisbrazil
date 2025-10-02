@@ -127,3 +127,10 @@
     cursor: pointer;
   }
   
+  .product-description p {
+    white-space: normal; 
+    overflow: visible; 
+    text-overflow: unset;
+    text-align: justify;
+  }
+  
