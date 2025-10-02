@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import PreFooter from "./components/PreFooter";
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 
+
 import Home from "./pages/Home";
 import Produtos from "./pages/Produtos";
 import Sobre from "./pages/Sobre";
@@ -16,6 +17,10 @@ import PoliticasdaEmpresa from "./pages/PoliticasdaEmpresa";
 import TrocasDevolucoes from "./pages/TrocasDevolucoes";
 import ScrollToTop from "./components/ScrollToTop";
 import ProductPage from "./pages/ProductPage";
+
+
+
+
 
 
 function Layout({ products }) {
