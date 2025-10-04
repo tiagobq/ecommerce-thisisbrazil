@@ -79,19 +79,22 @@ function ProductPage() {
         )}
 
         
-        <label>Selecione o tamanho:</label>
         {product.category === "camiseta" && (
+          <label>
+            
         <select
           value={selectedSize}
           onChange={(e) => setSelectedSize(e.target.value)}
-        >
+          >
+            Selecione o tamanho:
           <option value="">-- Escolha --</option>
           <option value="P">P</option>
           <option value="M">M</option>
           <option value="G">G</option>
           <option value="GG">GG</option>
-        </select>
+        </select></label>
         )}
+
         <button  
           className="buy-btn" onClick={handleBuyNow}>
                         Comprar Agora
