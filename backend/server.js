@@ -41,7 +41,7 @@ const products = [
       { nome: "Israel S.", texto: "Fiquei muito chic, obrigado.", estrelas: 4 },
       { nome: "Maria O.", texto: "Tamanho muito bom.", estrelas: 4 },
     ],
-    checkoutLink: "https://exemplo-checkout.com/sku/bone-verde-amarelo-01",
+    checkoutLink: "https://thisisbrazil.pay.yampi.com.br/r/G8R6OM1IF0",
   },
   {
     id: "3",
@@ -55,7 +55,7 @@ const products = [
       { nome: "João P.", texto: "Gostei do produto.", estrelas: 4 },
       { nome: "Cassio A.", texto: "Chegou muito rápido.", estrelas: 4 },
     ],
-    checkoutLink: "https://exemplo-checkout.com/sku/adesivo-patriota-01",
+    checkoutLink: "https://thisisbrazil.pay.yampi.com.br/r/60D218Z51E",
   },
 ];
 

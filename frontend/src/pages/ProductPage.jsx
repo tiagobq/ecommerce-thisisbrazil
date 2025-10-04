@@ -54,7 +54,7 @@ function ProductPage() {
     <div className="product-page container">
       <div className="product-image-section">
         <img
-          src={`http://localhost:4000${product.image}`}
+          src={`https://thisisbrazil-backend.onrender.com${product.image}`}
           alt={product.title}
           className="product-main-img"
         />
@@ -77,7 +77,10 @@ function ProductPage() {
         {product.discount && (
           <p className="product-discount">{product.discount}% OFF</p>
         )}
+
+        
         <label>Selecione o tamanho:</label>
+        {product.category === "camiseta" && (
         <select
           value={selectedSize}
           onChange={(e) => setSelectedSize(e.target.value)}
@@ -88,8 +91,7 @@ function ProductPage() {
           <option value="G">G</option>
           <option value="GG">GG</option>
         </select>
-
-
+        )}
         <button  
           className="buy-btn" onClick={handleBuyNow}>
                         Comprar Agora
