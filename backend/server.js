@@ -17,8 +17,8 @@ const products = [
   {
     id: "1",
     title: "Camiseta Bolsonaro Livre",
-    description: "Uma das peças que não podem faltar no guarda-roupas de todo mundo é a camiseta patriota. Ela pode ser usada em qualquer ocasião, apesar de simples, é estilosa, e combina com qualquer peça de roupa, como calças e bermudas. A malha da camiseta é confortável, possui toque macio e é de grande durabilidade. Ideal para o dia a dia, a camiseta patriota permite compor um look confortável e descontraído. Pensando no conforto do usuário, a camiseta da Bolsonaro livre amassa. Marca: DHOO Fashion Tamanhos: P, M, G, GG Composição: 65% Poliéster e 35%",
-    price: 7990,
+    description: "Uma das peças que não podem faltar no guarda-roupas de todo patriota. Confortável, estilosa e ideal para o dia a dia. A camiseta Bolsonaro Livre é feita com malha macia e durável (65% poliéster e 35% algodão). Marca: DHOO Fashion. Tamanhos: P, M, G e GG. Não amassa e combina com tudo!",
+
     oldPrice: 9990,
     category: "camiseta",
     image: "/images/camiseta.jpeg",
@@ -43,7 +43,7 @@ const products = [
       { nome: "Israel S.", texto: "Fiquei muito chic, obrigado.", estrelas: 4 },
       { nome: "Maria O.", texto: "Tamanho muito bom.", estrelas: 4 },
     ],
-    checkoutLink: "https://thisisbrazil.pay.yampi.com.br/r/G8R6OM1IF0",
+    checkoutLinks: "https://thisisbrazil.pay.yampi.com.br/r/G8R6OM1IF0",
   },
   {
     id: "3",
@@ -58,7 +58,7 @@ const products = [
       { nome: "João P.", texto: "Gostei do produto.", estrelas: 4 },
       { nome: "Cassio A.", texto: "Chegou muito rápido.", estrelas: 4 },
     ],
-    checkoutLink: "https://thisisbrazil.pay.yampi.com.br/r/60D218Z51E",
+    checkoutLinks: "https://thisisbrazil.pay.yampi.com.br/r/60D218Z51E",
   },
 ];
 

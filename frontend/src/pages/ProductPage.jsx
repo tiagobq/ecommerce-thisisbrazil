@@ -42,7 +42,7 @@ function ProductPage() {
       window.location.href = checkoutLinks[selectedSize];
     } else {
       // ✅ Para outros produtos, pode redirecionar diretamente
-      window.location.href = product.checkoutUrl || "https://thisisbrazil.com.br";
+      window.location.href = product.checkoutLinks || "https://thisisbrazil.com.br";
     }
   };
 
