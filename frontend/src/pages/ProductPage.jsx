@@ -32,7 +32,7 @@ function ProductPage() {
     }
 
     // ✅ Links de checkout — só funcionam para camisetas
-    if (product.category === "camiseta") {
+    if (product.id === "1") {
       const checkoutLinks = {
         P: "https://thisisbrazil.pay.yampi.com.br/r/MJP0HKOESE",
         M: "https://thisisbrazil.pay.yampi.com.br/r/MLN2VWX3RF",
@@ -78,7 +78,7 @@ function ProductPage() {
         )}
 
         {/* ✅ Só mostra o seletor de tamanho se for categoria camiseta */}
-        {product.category === "camiseta" && (
+        {product.id === "1" && (
           <div className="size-selector">
             <label>Selecione o tamanho:</label>
             <select
