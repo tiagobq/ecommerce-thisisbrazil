@@ -6,12 +6,10 @@ function ProductPage() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
-
   const [selectedSize, setSelectedSize] = useState("");
 
   useEffect(() => {
     fetch(`https://thisisbrazil-backend.onrender.com/api/products/${id}`)
-
       .then(res => {
         if (!res.ok) throw new Error("Produto não encontrado");
         return res.json();
@@ -25,30 +23,31 @@ function ProductPage() {
         setLoading(false);
       });
   }, [id]);
-  
+
   const handleBuyNow = () => {
-    if (!selectedSize) {
+    // ✅ Corrigido: parênteses e lógica separada
+    if (product.category === "camiseta" && !selectedSize) {
       alert("Por favor, selecione um tamanho antes de comprar.");
       return;
     }
-        const checkoutLinks = {
-          P: "https://thisisbrazil.pay.yampi.com.br/r/MJP0HKOESE",
-          M: "https://thisisbrazil.pay.yampi.com.br/r/MLN2VWX3RF",
-          G: "https://thisisbrazil.pay.yampi.com.br/r/U184TCNA6K",
-          GG: "https://thisisbrazil.pay.yampi.com.br/r/LA4Q5GKP6J",
-        };
 
-        window.location.href = checkoutLinks[selectedSize];
+    // ✅ Links de checkout — só funcionam para camisetas
+    if (product.category === "camiseta") {
+      const checkoutLinks = {
+        P: "https://thisisbrazil.pay.yampi.com.br/r/MJP0HKOESE",
+        M: "https://thisisbrazil.pay.yampi.com.br/r/MLN2VWX3RF",
+        G: "https://thisisbrazil.pay.yampi.com.br/r/U184TCNA6K",
+        GG: "https://thisisbrazil.pay.yampi.com.br/r/LA4Q5GKP6J",
       };
+      window.location.href = checkoutLinks[selectedSize];
+    } else {
+      // ✅ Para outros produtos, pode redirecionar diretamente
+      window.location.href = product.checkoutUrl || "https://thisisbrazil.com.br";
+    }
+  };
 
-  
-
-  if (loading) {
-    return <div className="product-page">Carregando...</div>;
-  }
-  if (!product) {
-    return <div className="product-page">Produto não encontrado</div>;
-  }
+  if (loading) return <div className="product-page">Carregando...</div>;
+  if (!product) return <div className="product-page">Produto não encontrado</div>;
 
   return (
     <div className="product-page container">
@@ -78,28 +77,27 @@ function ProductPage() {
           <p className="product-discount">{product.discount}% OFF</p>
         )}
 
-        
+        {/* ✅ Só mostra o seletor de tamanho se for categoria camiseta */}
         {product.category === "camiseta" && (
-          <label>
-            
-        <select
-          value={selectedSize}
-          onChange={(e) => setSelectedSize(e.target.value)}
-          >
-            Selecione o tamanho:
-          <option value="">-- Escolha --</option>
-          <option value="P">P</option>
-          <option value="M">M</option>
-          <option value="G">G</option>
-          <option value="GG">GG</option>
-        </select></label>
+          <div className="size-selector">
+            <label>Selecione o tamanho:</label>
+            <select
+              value={selectedSize}
+              onChange={(e) => setSelectedSize(e.target.value)}
+            >
+              <option value="">-- Escolha --</option>
+              <option value="P">P</option>
+              <option value="M">M</option>
+              <option value="G">G</option>
+              <option value="GG">GG</option>
+            </select>
+          </div>
         )}
 
-        <button  
-          className="buy-btn" onClick={handleBuyNow}>
-                        Comprar Agora
-              </button>
-        
+        <button className="buy-btn" onClick={handleBuyNow}>
+          Comprar Agora
+        </button>
+
         <div className="product-description">
           <h2>Descrição</h2>
           <p>{product.description}</p>
@@ -107,13 +105,11 @@ function ProductPage() {
 
         <div className="product-shipping">
           <h2>Envio</h2>
-          <p>Frete grátis para todo Brasil</p >
+          <p>Frete grátis para todo Brasil</p>
         </div>
 
-        {/* Avaliações */}
         <div className="reviews-section">
           <h2>Avaliações dos clientes</h2>
-
           {product.reviews && product.reviews.length > 0 ? (
             product.reviews.map((rev, index) => (
               <div key={index} className="review">
@@ -127,7 +123,6 @@ function ProductPage() {
           )}
         </div>
 
-        {/* Botão para ver mais avaliações */}
         <button className="see-more">Ver todas as avaliações</button>
       </div>
     </div>
