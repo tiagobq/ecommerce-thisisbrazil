@@ -20,6 +20,7 @@ const products = [
     description: "Uma das peças que não podem faltar no guarda-roupas de todo mundo é a camiseta patriota. Ela pode ser usada em qualquer ocasião, apesar de simples, é estilosa, e combina com qualquer peça de roupa, como calças e bermudas. A malha da camiseta é confortável, possui toque macio e é de grande durabilidade. Ideal para o dia a dia, a camiseta patriota permite compor um look confortável e descontraído. Pensando no conforto do usuário, a camiseta da Bolsonaro livre amassa. Marca: DHOO Fashion Tamanhos: P, M, G, GG Composição: 65% Poliéster e 35%",
     price: 7990,
     oldPrice: 9990,
+    category: "camiseta",
     image: "/images/camiseta.jpeg",
     reviews: [
       { nome: "Maria S.", texto: "Camiseta top, recomendo!", estrelas: 5 },
@@ -35,6 +36,7 @@ const products = [
     description: "Boné Patriota Ajustável para Mulheres/Homens",
     price: 5990,
     oldPrice: 8990,
+    category: "bone",
     image: "/images/bone.PNG",
     reviews: [
       { nome: "Estela E.", texto: "Vestiu muito bem, recomendo", estrelas: 5 },
@@ -49,6 +51,7 @@ const products = [
     description: "Caneca Bolsonaro Presidente Personalizado",
     price: 5990,
     oldPrice: 7990,
+    category: "caneca",
     image: "/images/caneca.PNG",
     reviews: [
       { nome: "Maria S.", texto: "Agora sou patriota mesmo.", estrelas: 5 },
