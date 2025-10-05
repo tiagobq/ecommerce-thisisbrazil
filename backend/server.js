@@ -18,7 +18,7 @@ const products = [
     id: "1",
     title: "Camiseta Bolsonaro Livre",
     description: "Uma das peças que não podem faltar no guarda-roupas de todo patriota. Confortável, estilosa e ideal para o dia a dia. A camiseta Bolsonaro Livre é feita com malha macia e durável (65% poliéster e 35% algodão). Marca: DHOO Fashion. Tamanhos: P, M, G e GG. Não amassa e combina com tudo!",
-
+    price: 7990,
     oldPrice: 9990,
     category: "camiseta",
     image: "/images/camiseta.jpeg",
