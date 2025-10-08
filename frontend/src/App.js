@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PreFooter from "./components/PreFooter";
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
+import ReactPixel from "react-facebook-pixel";
 
 
 import Home from "./pages/Home";
@@ -84,6 +85,10 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
+    const pixelId = "355576679022572"; // 👉 coloque seu ID real
+    ReactPixel.init(pixelId);
+    ReactPixel.pageView(); 
+    
     fetch("https://thisisbrazil-backend.onrender.com/api/products")
 
       .then((res) => res.json())
