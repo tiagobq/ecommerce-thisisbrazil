@@ -5,28 +5,37 @@ import "./Home.css";
 function Home({ products }) {
   return (
     <div className="home">
+      {/* 🔹 HERO SECTION */}
       <section className="hero">
-      <source srcSet="/images/banner-mobile.webp" media="(max-width: 768px)" />
-        <img src="/banner.png" alt="Banner" className="hero-img" />
+        <picture>
+          <source
+            srcSet="/images/banner-mobile.webp"
+            media="(max-width: 768px)"
+          />
+          <img src="/banner.png" alt="Banner" className="hero-img" />
+        </picture>
         <a href="#produtos">
           <button className="hero-btn">Compre Agora</button>
         </a>
       </section>
 
+      {/* 🔹 PRODUTOS */}
       <section id="produtos" className="products">
         <h2>Produtos em Destaque</h2>
         <div className="product-grid">
           {products.map((produto) => (
             <div key={produto.id} className="product-card">
               <Link to={`/produto/${produto.id}`}>
-              
-              <img src={`https://thisisbrazil-backend.onrender.com${product.image}`} alt={product.title} />
-                
-                className="product-img"
-            
+                <img
+                  src={`https://thisisbrazil-backend.onrender.com${produto.image}`}
+                  alt={produto.title}
+                  className="product-img"
+                  loading="lazy"
+                />
               </Link>
+
               <h3>{produto.title}</h3>
-              
+
               {/* 🔥 Preço com comparação */}
               <div className="product-price">
                 {produto.oldPrice && (
@@ -39,18 +48,10 @@ function Home({ products }) {
                 </span>
               </div>
 
-              <a
-                href={products.checkoutUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Link to={`/produto/${produto.id}`}>
-                <Link to={`/produto/${produto.id}`}>
-              <button>Comprar</button>
-            </Link>
-            </Link>
-
-              </a>
+              {/* 🔹 Botão de Comprar */}
+              <Link to={`/produto/${produto.id}`}>
+                <button>Comprar</button>
+              </Link>
             </div>
           ))}
         </div>
