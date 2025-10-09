@@ -90,6 +90,15 @@ app.get("/api/checkout/:id", (req, res) => {
   return res.redirect(302, product.checkoutLink);
 });
 
+// Servir o build do React
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+// Redirecionar qualquer rota desconhecida para o React
+app.get(/.*/, (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
+});
+
+
 app.listen(PORT, () => {
   console.log(`✅ API rodando na porta ${PORT}`);
 });
