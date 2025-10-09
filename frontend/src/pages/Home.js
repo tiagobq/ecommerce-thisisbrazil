@@ -15,7 +15,7 @@ function Home({ products }) {
           <img src="/banner.png" alt="Banner" className="hero-img" />
         </picture>
         <a href="#produtos">
-          <button className="hero-btn">Compre Agora</button>
+          <button className="hero-btn"></button>
         </a>
       </section>
 
