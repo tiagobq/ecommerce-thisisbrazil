@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Home.css";
 
 function Home({ products }) {
   return (
@@ -18,11 +19,11 @@ function Home({ products }) {
           {products.map((produto) => (
             <div key={produto.id} className="product-card">
               <Link to={`/produto/${produto.id}`}>
-              <img
-                src={`http://localhost:4000${produto.image}`}
-                alt={produto.title}
+              
+              <img src={`https://thisisbrazil-backend.onrender.com${product.image}`} alt={product.title} />
+                
                 className="product-img"
-              />
+            
               </Link>
               <h3>{produto.title}</h3>
               

@@ -85,7 +85,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const pixelId = "355576679022572"; // 👉 coloque seu ID real
+    const pixelId = "355576679022572"; 
     ReactPixel.init(pixelId);
     ReactPixel.pageView(); 
     
