@@ -1,10 +1,13 @@
-.pre-footer {
+.prefooter {
+  height: auto; 
+  overflow: visible;
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  background: #f9f9f9;
-  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
 }
+
 
 .pre-footer-item {
   flex: 1;
