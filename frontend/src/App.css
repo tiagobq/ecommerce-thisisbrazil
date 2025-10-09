@@ -258,3 +258,10 @@ body {
   color: green;
   font-weight: bold;
 }
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
