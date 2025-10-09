@@ -34,3 +34,22 @@
     object-fit: cover;
   }
   
+
+  .product-img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .product-img {
+      width: 70%;
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  
