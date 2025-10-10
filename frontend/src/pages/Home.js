@@ -30,7 +30,6 @@ function Home({ products }) {
                   src={`https://thisisbrazil-backend.onrender.com${produto.image}`}
                   alt={produto.title}
                   className="product-img"
-                  loading="lazy"
                 />
               </Link>
 
