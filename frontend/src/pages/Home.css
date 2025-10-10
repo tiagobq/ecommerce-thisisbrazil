@@ -134,6 +134,16 @@
       padding: 10px 20px;
     }
   
+    @media (max-width: 768px) {
+        .product-card img {
+          width: 80%;
+          height: auto;
+          display: block;
+          visibility: visible;
+          object-fit: contain;
+        }
+      }
+      
     .product-img {
       width: 70%;
       height: auto;
