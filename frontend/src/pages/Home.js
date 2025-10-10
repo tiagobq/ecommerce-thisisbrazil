@@ -27,7 +27,7 @@ function Home({ products }) {
             <div key={produto.id} className="product-card">
               <Link to={`/produto/${produto.id}`}>
                 <img
-                  src={`https://thisisbrazil-backend.onrender.com${products.image}`}
+                  src={`https://thisisbrazil-backend.onrender.com${produto.image}`}
                   alt={produto.title}
                   className="product-img"
                 />
