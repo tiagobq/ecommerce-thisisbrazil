@@ -93,13 +93,6 @@
   background: #fff;
 }
 
-.product-card img {
-  width: 80%;        
-  max-height: 350px;  
-  object-fit: cover;  
-  border-radius: 8px; 
-}
-
 .product-card h3,
 .product-card p {
   margin: 10px 0;
@@ -261,7 +254,18 @@ body {
 
 .product-card img {
   width: 100%;
+  max-width: 250px; /* evita imagens muito grandes */
   height: auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain; /* mantém a imagem inteira */
+  margin: 0 auto;
+  border-radius: 8px;
 }
+@media (max-width: 768px) {
+  .product-card img {
+    width: 80%;
+    max-width: 200px;
+    object-fit: contain;
+  }
+}
+
