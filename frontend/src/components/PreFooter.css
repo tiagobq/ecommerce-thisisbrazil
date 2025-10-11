@@ -1,27 +1,28 @@
-.prefooter {
-  height: auto; 
-  overflow: visible;
+.pre-footer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 40px;
   padding: 2rem 1rem;
+  text-align: center;
+  background-color: #fff;
 }
 
-
 .pre-footer-item {
-  flex: 1;
-  margin: 10px;
+  flex: 1 1 250px; /* cada bloco ocupa espaço igual */
+  max-width: 280px;
 }
 
 .pre-footer-item img {
-  width: 50px;
+  width: 60px;
   margin-bottom: 10px;
 }
 
 .faixas-brasil {
   display: flex;
-  height: 8px; /* ajuste a espessura */
+  height: 8px;
+  margin-top: 20px;
 }
 
 .faixa.verde {
@@ -34,31 +35,14 @@
   flex: 1;
 }
 
-/* === ÍCONES DO PREFOOTER LADO A LADO === */
-.delivery-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px; /* mais espaçamento entre ícones */
-  flex-wrap: nowrap; /* impede quebra de linha */
-  flex-direction: row;
-  width: 100%;
-}
-
-.delivery-icons img {
-  width: 70px;
-  height: auto;
-  display: inline-block;
-  object-fit: contain;
-}
-
+/* Responsivo */
 @media (max-width: 768px) {
-  .delivery-icons {
-    flex-wrap: wrap; /* no mobile quebra em duas linhas se precisar */
+  .pre-footer {
     gap: 20px;
   }
 
-  .delivery-icons img {
+  .pre-footer-item img {
     width: 50px;
   }
 }
+
