@@ -157,3 +157,25 @@
     }
   }
   
+  /* === CORRIGE ALTURA DESIGUAL DOS PRODUTOS === */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* garante preenchimento */
+    min-height: 420px; /* altura fixa visual */
+  }
+  
+  .product-card h3 {
+    min-height: 40px; /* força mesmo espaço para título */
+  }
+  
+  .product-card .product-price {
+    min-height: 30px; /* força mesmo espaço entre preços */
+  }
+  
+  .product-card button {
+    margin-top: auto; /* empurra o botão pro final */
+  }
+  

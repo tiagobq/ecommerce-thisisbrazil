@@ -33,3 +33,18 @@
   background: yellow;
   flex: 1;
 }
+
+/* === ÍCONES DO PREFOOTER LADO A LADO === */
+.delivery-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* espaçamento entre ícones */
+  flex-wrap: wrap; /* garante que no mobile quebrem corretamente */
+}
+
+.delivery-icons img {
+  width: 60px;
+  height: auto;
+  display: block;
+}
