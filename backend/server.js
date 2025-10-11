@@ -9,8 +9,12 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
-// Servir imagens estáticas
-app.use("/images", express.static(path.join(__dirname, "public", "images")));
+app.use("/images", express.static(path.join(__dirname, "public", "images"), {
+  setHeaders: (res) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+  },
+}));
+
 
 // Catálogo estático
 const products = [
