@@ -39,12 +39,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* espaçamento entre ícones */
-  flex-wrap: wrap; /* garante que no mobile quebrem corretamente */
+  gap: 30px; /* mais espaçamento entre ícones */
+  flex-wrap: nowrap; /* impede quebra de linha */
+  flex-direction: row;
+  width: 100%;
 }
 
 .delivery-icons img {
-  width: 60px;
+  width: 70px;
   height: auto;
-  display: block;
+  display: inline-block;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .delivery-icons {
+    flex-wrap: wrap; /* no mobile quebra em duas linhas se precisar */
+    gap: 20px;
+  }
+
+  .delivery-icons img {
+    width: 50px;
+  }
 }
