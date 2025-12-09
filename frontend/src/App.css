@@ -269,3 +269,26 @@ body {
   }
 }
 
+/* Menu desktop padrão (horizontal, centralizado) */
+.nav-links {
+  display: flex;
+  justify-content: center; /* centraliza no desktop */
+  list-style: none;
+  gap: 25px; /* espaçamento entre itens */
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Menu mobile: alinhado à esquerda */
+@media (max-width: 480px) {
+  .nav-links {
+    justify-content: flex-start; /* alinhamento à esquerda */
+    padding-left: 15px; /* dá um espaço da borda */
+    flex-direction: column; /* empilha itens verticalmente */
+    gap: 15px; /* espaçamento entre itens na vertical */
+  }
+
+  .nav-links li {
+    margin: 0; /* remove margem extra */
+  }
+}
